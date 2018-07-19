@@ -55,10 +55,15 @@ var spark = {
               latest = result.txs[0].txid;
               temp = result.txs[0].vout[0].value;
               if (latest != initial) {
-                found = result.txs[0].vout[0].value;
+                result.txs[0].vout.forEach(function(output) {
+                  if (output.scriptPubKey.addresses[0] === app.$data.address) {
+                    found = output.value;
+                    app.$data.price.received = found;
+                  }
+                });
               }
             }
-            //app.$data.price.received = received;
+            console.log(result);
             console.log(`expected amount: ${expected}`);
             console.log(`found amount: ${found}`);
             console.log(`actual found: ${temp}`);
