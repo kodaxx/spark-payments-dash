@@ -1,49 +1,19 @@
-# DashPay Point-Of-Sale
+# Spark Payments DASH Point-Of-Sale
 
-DashPay is a mobile-friendly point-of-sale app that merchants can use to accept Dash payments.
+Spark Payments is a mobile-friendly point-of-sale app that merchants can use to accept Dash payments.
 
 ![alt text](https://github.com//kodaxx/dashpayPOS/raw/master/www/img/dashpayterminal.png "DashPay Terminal Mockup")
 
 # Current Features
 
-* Works on Android, iOS, Windows Phone - Mac, Windows, Linux
-* Compatible with Trezor/KeepKey/Ledger Hardware Wallets
-* Generate a new account on first run. Customize store name, create backups, etc.
-* Enter sale amounts in your local currency (only supports USD at the moment) and have them converted to an amount in Dash using http://coinmarketcap.com exchange rate
-* A QR code payment request is generated with your receiving address, sale amount, store name, and 'use InstantSend' for your customers to scan
-* Unique addresses are used for every sale that are a part of your HD wallet. One private key
+* Enter sale amounts in your local currency (supports many currencies) and have them converted to an amount in Dash
+* A QR code payment request is generated
 * Get an on-screen notification when the requested amount is received at your address
-* Detects partial payments and allows multiple parties to pay the total amount owed
 
-#Planned Features
-
-* NFC touch-to-pay with mobile phones using Dash Wallet
-* Multiple currency support (USD, CAD, UAD, etc.)
-* Offline payments system using plastic EMV-type cards for customers
-* Ability to have payments converted to fiat instantly
-
-# Installation
-
-Pending
-
-# TO-DO before first release
-
-* Major code clean-up/refactoring
-* Link to block explorer for manual verification
-* Manual price refresh
-* All Cordova/PhoneGap builds
-* Electron Builds
-* Transactions and the exchange rate at the time of sale are recorded and can be viewed later
-
-# TO-DO
-
-* Change from dashjs to bitcore
-* Change from localStorage to localForage
-* TEST and better error handling
 
 # License
 
-Copyright (C) 2016 kodaxx & nitya
+Copyright (C) 2018 kodaxx
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
