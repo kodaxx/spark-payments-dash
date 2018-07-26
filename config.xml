@@ -1,10 +1,11 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.kodaxx.dashpay" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.kodaxx.dashpay" version="1.0.1">
 	<name>Spark Payments [DASH]</name>
 	<description>An external terminal for processing DASH transactions in brick and mortar stores</description>
 	<author href="http://kodaxx.github.io" email="kodaxx@gmail.com">kodaxx</author>
 	<content src="index.html" />
 	<preference name="DisallowOverscroll" value="true" />
 	<preference name="android-minSdkVersion" value="14" />
+	<preference name="android-targetSdkVersion" value="26" />
 	<preference name="orientation" value="portrait" />
 	<preference name="KeyboardShrinksView" value="true" />
 	<preference name="android-windowSoftInputMode" value="adjustPan" />
