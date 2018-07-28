@@ -25,7 +25,7 @@
     </transition>
     <div id='content'>
       <span @click="route = 'settings'" v-show="route == 'home'" id="menu">☰</span>
-      <span @click="route = 'home'" v-show="route == 'settings'" id="menu">✕</span>
+      <span @click="route = 'home'" v-show="route == 'settings' && settings.account" id="menu">✕</span>
       <img class='logo' src='img/logo.png'>
       <!-- CONNECTION -->
       <transition name="fade">
